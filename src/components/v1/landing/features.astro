@@ -1,0 +1,69 @@
+---
+import BotIcon from "@/components/v1/icons/bot.astro";
+import InfoIcon from "@/components/v1/icons/info.astro";
+import CombineIcon from "@/components/v1/icons/combine.astro";
+---
+
+<section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+    <div class="container px-4 md:px-6">
+        <div
+            class="flex flex-col items-center justify-center space-y-4 text-center"
+        >
+            <div class="space-y-2">
+                <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                    Key Features
+                </div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    Streamline Your Business with Our SaaS Platform
+                </h2>
+                <p
+                    class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                    Our SaaS solution offers a comprehensive set of tools to
+                    help you manage your business more efficiently, from
+                    automation to data-driven insights.
+                </p>
+            </div>
+        </div>
+        <div
+            class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12"
+        >
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <BotIcon class="h-12 w-12 text-primary" />
+                <div class="space-y-1">
+                    <h3 class="text-xl font-bold">Automation</h3>
+                    <p class="text-muted-foreground">
+                        Streamline your workflows and eliminate manual tasks
+                        with our powerful automation tools.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <InfoIcon class="h-12 w-12 text-primary" />
+                <div class="space-y-1">
+                    <h3 class="text-xl font-bold">Analytics</h3>
+                    <p class="text-muted-foreground">
+                        Gain valuable insights into your business with our
+                        advanced analytics and reporting features.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <CombineIcon class="h-12 w-12 text-primary" />
+                <div class="space-y-1">
+                    <h3 class="text-xl font-bold">Collaboration</h3>
+                    <p class="text-muted-foreground">
+                        Empower your team to work together seamlessly with our
+                        built-in collaboration tools.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,90 @@
+---
+import { Image } from "astro:assets";
+import placeholder from "@/assets/hero-placeholder.svg";
+---
+
+<section class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container px-4 md:px-6">
+        <div
+            class="flex flex-col items-center justify-center space-y-4 text-center"
+        >
+            <div class="space-y-2">
+                <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                    Testimonials
+                </div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    What Our Customers Say
+                </h2>
+                <p
+                    class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                    Hear from our satisfied customers and learn how our SaaS
+                    solution has transformed their businesses.
+                </p>
+            </div>
+        </div>
+        <div
+            class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12"
+        >
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <Image
+                    src={placeholder}
+                    width="140"
+                    height="70"
+                    alt="Logo"
+                    class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                />
+                <div class="space-y-1">
+                    <p class="text-muted-foreground">
+                        "Our team has been able to streamline our operations
+                        and\n boost productivity since we started using this
+                        SaaS\n platform. Highly recommended!"
+                    </p>
+                    <p class="font-medium">- John Doe, CEO at Acme Inc.</p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <Image
+                    src={placeholder}
+                    width="140"
+                    height="70"
+                    alt="Logo"
+                    class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                />
+                <div class="space-y-1">
+                    <p class="text-muted-foreground">
+                        "This SaaS platform has been a game-changer for our\n
+                        business. The analytics and reporting features have\n
+                        helped us make data-driven decisions."
+                    </p>
+                    <p class="font-medium">- Jane Smith, CFO at Globex Inc.</p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+                <Image
+                    src={placeholder}
+                    width="140"
+                    height="70"
+                    alt="Logo"
+                    class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                />
+                <div class="space-y-1">
+                    <p class="text-muted-foreground">
+                        "The collaboration tools in this SaaS platform have\n
+                        transformed the way our team works together. We're\n
+                        more efficient and productive than ever before."
+                    </p>
+                    <p class="font-medium">
+                        - Michael Johnson, CTO at Stark Industries
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

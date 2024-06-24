@@ -1,0 +1,140 @@
+---
+import { Separator } from "@/components/ui/separator";
+import CheckIcon from "@/components/v1/icons/check.astro";
+import XIcon from "@/components/v1/icons/x.astro";
+---
+
+<section id="pricing" class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+    <div class="container px-4 md:px-6">
+        <div
+            class="flex flex-col items-center justify-center space-y-4 text-center"
+        >
+            <div class="space-y-2">
+                <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">
+                    Pricing
+                </div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    Flexible Pricing to Fit Your Needs
+                </h2>
+                <p
+                    class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                    Choose the plan that works best for your business, and scale
+                    as you grow.
+                </p>
+            </div>
+        </div>
+        <div
+            class="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12"
+        >
+            <div
+                class="flex flex-col rounded-lg border bg-background p-6 shadow-sm"
+            >
+                <div class="space-y-2">
+                    <h3 class="text-2xl font-bold">Starter</h3>
+                    <p class="text-4xl font-bold">$9</p>
+                    <p class="text-muted-foreground">per month</p>
+                </div>
+                <Separator className="my-6" />
+                <ul class="grid gap-2 text-muted-foreground">
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Up to 5 users</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Basic features</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Limited storage</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <XIcon class="h-4 w-4 text-red-500" />
+                        <span>No custom branding</span>
+                    </li>
+                </ul>
+                <div class="mt-5 lg:text-center">
+                    <a
+                        href="/auth/signup"
+                        class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    >
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            <div
+                class="flex flex-col rounded-lg border bg-background p-6 shadow-sm"
+            >
+                <div class="space-y-2">
+                    <h3 class="text-2xl font-bold">Pro</h3>
+                    <p class="text-4xl font-bold">$29</p>
+                    <p class="text-muted-foreground">per month</p>
+                </div>
+                <Separator className="my-6" />
+                <ul class="grid gap-2 text-muted-foreground">
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Up to 25 users</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Advanced features</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Increased storage</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Custom branding</span>
+                    </li>
+                </ul>
+                <div class="mt-5 lg:text-center">
+                    <a
+                        href="/auth/signup"
+                        class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    >
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            <div
+                class="flex flex-col rounded-lg border bg-background p-6 shadow-sm"
+            >
+                <div class="space-y-2">
+                    <h3 class="text-2xl font-bold">Enterprise</h3>
+                    <p class="text-4xl font-bold">Custom</p>
+                    <p class="text-muted-foreground">Tailored to your needs</p>
+                </div>
+                <Separator className="my-6" />
+                <ul class="grid gap-2 text-muted-foreground">
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Unlimited users</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Customized features</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Dedicated support</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <CheckIcon class="h-4 w-4 text-green-500" />
+                        <span>Enterprise-grade security</span>
+                    </li>
+                </ul>
+                <div class="mt-5 lg:text-center">
+                    <a
+                        href="#"
+                        class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                    >
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
