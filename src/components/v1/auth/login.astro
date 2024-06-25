@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 
 import { Image } from "astro:assets";
 import imgPlaceholder from "@/assets/auth-placeholder.svg";
+import Link from "@/components/Link.astro";
 ---
 
 <div class="w-full lg:grid lg:min-h-screen lg:grid-cols-2">
@@ -29,12 +30,12 @@ import imgPlaceholder from "@/assets/auth-placeholder.svg";
                 <div class="grid gap-2">
                     <div class="flex items-center">
                         <Label htmlFor="password">Password</Label>
-                        <a
+                        <Link
                             href="/auth/forgot-password"
                             class="ml-auto inline-block text-sm underline"
                         >
                             Forgot your password?
-                        </a>
+                        </Link>
                     </div>
                     <Input id="password" type="password" required />
                 </div>
@@ -45,7 +46,7 @@ import imgPlaceholder from "@/assets/auth-placeholder.svg";
             </div>
             <div class="mt-4 text-center text-sm">
                 Don't have an account?
-                <a href="/auth/signup" class="underline"> Sign up </a>
+                <Link href="/auth/signup" class="underline"> Sign up </a>
             </div>
         </div>
     </div>

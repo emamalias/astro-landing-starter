@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 
 import { Image } from "astro:assets";
 import imgPlaceholder from "@/assets/auth-placeholder.svg";
+import Link from "@/components/Link.astro";
 ---
 
 <div class="w-full lg:grid lg:min-h-screen lg:grid-cols-2">
@@ -43,7 +44,7 @@ import imgPlaceholder from "@/assets/auth-placeholder.svg";
             </div>
             <div class="mt-4 text-center text-sm">
                 Already have an account?
-                <a href="/auth/signin" class="underline"> Sign in </a>
+                <Link href="/auth/signin" class="underline"> Sign in </a>
             </div>
         </div>
     </div>

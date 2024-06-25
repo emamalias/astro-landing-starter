@@ -5,6 +5,7 @@
 - ShadCN UI
 - Tailwind
 - React
+- Vite
 
 ## 🚀 Project Structure
 

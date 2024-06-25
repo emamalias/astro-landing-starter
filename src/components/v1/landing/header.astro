@@ -1,36 +1,25 @@
 ---
 import Logo from "@/components/v1/icons/logo.astro";
+import Link from "@/components/Link.astro";
 ---
 
 <header class="px-4 lg:px-6 h-14 flex items-center">
-    <a href="/" class="flex items-center justify-center">
+    <Link href="/" class="flex items-center justify-center">
         <Logo class="h-6 w-6" />
         <span class="sr-only">Acme SaaS</span>
-    </a>
+    </Link>
     <nav class="ml-auto flex gap-4 sm:gap-6">
-        <a
-            href="#"
+        <Link
+            href="/auth/signup"
             class="text-sm font-medium hover:underline underline-offset-4"
         >
-            Features
-        </a>
-        <a
-            href="#"
+            Auth Page
+        </Link>
+        <Link
+            href="https://emamalias.github.io/astro-landing-starter"
             class="text-sm font-medium hover:underline underline-offset-4"
         >
-            Pricing
-        </a>
-        <a
-            href="#"
-            class="text-sm font-medium hover:underline underline-offset-4"
-        >
-            Customers
-        </a>
-        <a
-            href="#"
-            class="text-sm font-medium hover:underline underline-offset-4"
-        >
-            Contact
-        </a>
+            Github
+        </Link>
     </nav>
 </header>
